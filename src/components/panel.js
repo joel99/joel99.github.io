@@ -47,7 +47,7 @@ const Panel = ({ node }) => {
   }
   if (data.website) {
     links.push(<div style={styles.linkItem}>
-      <ButtonLink to={data.code} name={"Website"} />
+      <ButtonLink to={data.website} name={"Website"} />
     </div>);
   }
   if (data.code) {
@@ -65,6 +65,8 @@ const Panel = ({ node }) => {
       <ButtonLink to={data.video} name={"Video"} />
     </div>);
   }
+  // This has too much whitespace..
+  const optionalText = data.optionalText && (<p>{data.optionalText}</p>);
   return (
     <div style={styles.container} key={node.fields.slug}>
       <div>
@@ -74,6 +76,7 @@ const Panel = ({ node }) => {
         <div>
           {authorSpans}
         </div>
+        {optionalText}
         <small>{data.pub_info}</small>
         <div style={styles.links}>
           {links}

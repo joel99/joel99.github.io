@@ -49,7 +49,7 @@ class IndexPage extends React.Component {
           </div>
           <div style={styles.spotlight}>
             {/* <h3> Researcher &amp; Developer </h3> */}
-            <h4> (Incoming) PhD student at CMU </h4>
+            <h4> NeuroAI PhD student </h4>
             {/* <p> MS @ Georgia Tech &#8594; PhD student @ CMU </p> */}
             <p> Say hello: joelye9 at gmail dot com </p>
             <div style={styles.links}>
@@ -59,9 +59,14 @@ class IndexPage extends React.Component {
         </div>
         <section>
           <h3>Bio</h3>
-          <p> I study machine learning as a Master's student at Georgia Tech. My research aims to relate computation in the brain and in AI systems, with a eye towards applications in brain-computer interfaces.
-            I'm currently working with <a href="https://www.cc.gatech.edu/~dbatra/">Dhruv Batra</a>, <a href="https://wijmans.xyz/">Erik Wijmans</a>, and <a href="https://abhishekdas.com/">Abhishek Das</a> on embodied navigation.
-              I also work with <a href="https://scholar.google.com/citations?user=M3-z9G4AAAAJ&hl=en">Chethan Pandarinath</a> on modeling neural data.</p>
+          <p>
+            I am a PhD student in the <a href="https://www.cmu.edu/ni/academics/pnc/">Program in Neural Computation at CMU</a>. My research aims to relate computation in the brain and in AI systems, with a eye towards applications in brain-computer interfaces.
+          </p>
+
+          <p>
+            In my Master's I researched embodied navigation with <a href="https://www.cc.gatech.edu/~dbatra/">Dhruv Batra</a>, <a href="https://wijmans.xyz/">Erik Wijmans</a>, and <a href="https://abhishekdas.com/">Abhishek Das</a>, and I also worked on modeling neural data with <a href="https://scholar.google.com/citations?user=M3-z9G4AAAAJ&hl=en">Chethan Pandarinath</a>.
+          </p>
+
           <p> I grew up in NYC, where I graduated from Stuyvesant High School, and I did my undergrad in Computer Science at Georgia Tech. During my undergrad, I was Director of Technology for Georgia Tech's hackathon org, <a href="https://hack.gt/">HackGT</a>, where we worked to host events to promote CS education. </p>
 
           <p> Hobbies I make time for include <a href="https://www.goodreads.com/user/show/97533622-joel-ye">reading</a> (and am always open to recommendations) and studying Japanese and Chinese.</p>
@@ -174,6 +179,7 @@ export const pageQuery = graphql`
             slides
             video
             title
+            # optionalText
             image {
               childImageSharp {
                 fluid {
