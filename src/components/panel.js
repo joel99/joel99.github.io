@@ -30,7 +30,7 @@ const Panel = ({ node }) => {
   const title = data.title || node.fields.slug;
   const authorSpans = data.authors.map(a => a.trim()).map((a, i) => {
     let style = styles.author;
-    if (a === queriedData.site.siteMetadata.author) {
+    if (a.includes(queriedData.site.siteMetadata.author)) {
       style = { ...style, ...styles.authorEmph };
     }
     return (<React.Fragment>
@@ -82,7 +82,7 @@ const Panel = ({ node }) => {
           {links}
         </div>
       </div>
-      <div>
+      <div style={styles.imgPreview}>
         {image &&  <Img fluid={image.fluid} alt={title} />}
       </div>
     </div>
@@ -112,6 +112,9 @@ const styles = {
     marginTop: "0.5em",
     marginBottom: "0.5em"
   },
+  // imgPreview: {
+  //   maxHeight: "12em"
+  // }
 }
 
 export default Panel
