@@ -60,7 +60,7 @@ class IndexPage extends React.Component {
         <section>
           <h3>Bio</h3>
           <p>
-            I am a PhD student in the <a href="https://www.cmu.edu/ni/academics/pnc/">Program in Neural Computation at CMU</a>, rotating with <a href="https://scholar.google.com/citations?hl=en&user=kKE_lJUAAAAJ">Aaron Batista</a> and <a href="https://www.cs.cmu.edu/~lwehbe/">Leila Wehbe</a>. My research aims to relate computation in the brain and in AI systems, and to develop deep learning systems for bi-directional brain-computer interfaces.
+            I am a PhD student in the <a href="https://www.cmu.edu/ni/academics/pnc/">Program in Neural Computation at CMU</a>, rotating with <a href="https://www.rnel.pitt.edu/people/robert-gaunt-phd">Robert Gaunt</a> and <a href="https://www.cs.cmu.edu/~lwehbe/">Leila Wehbe</a>. My research aims to relate computation in the brain and in AI systems, and to develop deep learning systems for bi-directional brain-computer interfaces.
           </p>
 
           <p>
@@ -69,7 +69,7 @@ class IndexPage extends React.Component {
 
           <p> I grew up in NYC, where I graduated from Stuyvesant High School, and I did my undergrad in Computer Science at Georgia Tech. During my undergrad, I was Director of Technology for Georgia Tech's hackathon org, <a href="https://hack.gt/">HackGT</a>, where we worked to host events to promote CS education. </p>
 
-          <p> Hobbies I make time for include <a href="https://www.goodreads.com/user/show/97533622-joel-ye">reading</a> (and am always open to recommendations) and studying Japanese and Chinese.</p>
+          <p> Hobbies I make time for include <a href="https://www.goodreads.com/user/show/97533622-joel-ye">reading</a> (and I'm always open to recommendations) and studying Japanese and Chinese.</p>
         </section>
         <section>
           {data.news.nodes.map(RemarkTemplate)}
