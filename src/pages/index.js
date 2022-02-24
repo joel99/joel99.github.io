@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { FiGithub, FiTwitter, FiLinkedin, FiFileText } from "react-icons/fi";
 import { SiGithub, SiTwitter, SiLinkedin, SiFileText, SiGooglescholar } from "react-icons/si";
