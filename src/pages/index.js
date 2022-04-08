@@ -60,7 +60,7 @@ class IndexPage extends React.Component {
         <section>
           <h3>Bio</h3>
           <p>
-            I am a PhD student in the <a href="https://www.cmu.edu/ni/academics/pnc/">Program in Neural Computation at CMU</a>, rotating with <a href="https://www.rnel.pitt.edu/people/robert-gaunt-phd">Robert Gaunt</a> and <a href="https://www.cs.cmu.edu/~lwehbe/">Leila Wehbe</a>. My research aims to relate computation in the brain and in AI systems, and to develop deep learning systems for bi-directional brain-computer interfaces. If you're just getting started in this area and would like advice, feel free to reach out!
+            I am a PhD student in the <a href="https://www.cmu.edu/ni/academics/pnc/">Program in Neural Computation at CMU</a>, rotating with <a href="https://www.rnel.pitt.edu/people/robert-gaunt-phd">Robert Gaunt</a> and <a href="https://www.cs.cmu.edu/~lwehbe/">Leila Wehbe</a>. My research aims to relate computation in the brain and in AI systems, and to develop deep learning systems for bi-directional brain-computer interfaces. If you're just getting started in this area and would like advice, feel free to reach out! My work is supported by the <a href="https://www.krellinst.org/csgf/">DOE CSGF fellowship</a>.
           </p>
 
           <p>
