@@ -13,6 +13,8 @@ Path=./,
 	UprightFont = *-Regular,
     BoldFont = *-Bold
 ]
+
+% \usepackage{tgadventor}
 \usepackage{textcomp}
 \pagestyle{empty}
 \setlength{\tabcolsep}{0em}
@@ -25,6 +27,7 @@ Path=./,
 \newcommand\ruleafter[1]{#1~\xhrulefill{gray}{1pt}}
 
 \titleformat{\subsection}
+      %  {\normalfont\fontsize{14}{16}\bfseries}
        {\normalfont\lato\fontsize{14}{16}\bfseries}
        {\thesubsection}
        {1em}{\ruleafter}[]
