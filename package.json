@@ -29,7 +29,7 @@
     "gatsby-remark-smartypants": "^4.8.0",
     "gatsby-remark-vscode": "^3.3.1",
     "gatsby-source-filesystem": "^3.8.0",
-    "gatsby-transformer-remark": "^4.8.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^3.12.1",
     "netlify-cms-app": "^2.15.66",
     "react": "^16.8.6",
