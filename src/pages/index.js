@@ -158,7 +158,7 @@ export const pageQuery = graphql`
     }
     news: allMarkdownRemark {
       nodes {
-        html
+        rawMarkdownBody
       }
     }
     allMdx(
