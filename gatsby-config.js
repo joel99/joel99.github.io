@@ -10,13 +10,12 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-netlify-cms`,
+    // `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-feed-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -56,9 +55,9 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          {
-            resolve: `gatsby-remark-vscode`,
-          },
+          // {
+          //   resolve: `gatsby-remark-vscode`,
+          // },
           {
             resolve: `gatsby-remark-copy-linked-files`,
           },
@@ -66,7 +65,7 @@ module.exports = {
             resolve: `gatsby-remark-smartypants`,
           },
         ],
-        plugins: [`gatsby-remark-images`],
+        // plugins: [`gatsby-remark-images`],
       },
     },
     // {
