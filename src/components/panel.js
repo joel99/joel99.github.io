@@ -65,6 +65,11 @@ const Panel = ({ node }) => {
       <ButtonLink to={data.video} name={"Video"} />
     </div>);
   }
+  if (data.openreview) {
+    links.push(<div style={styles.linkItem}>
+      <ButtonLink to={data.openreview} name={"OpenReview"} />
+    </div>);
+  }
   // This has too much whitespace..
   const optionalText = data.optionalText && (<p>{data.optionalText}</p>);
   return (
