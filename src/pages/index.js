@@ -178,6 +178,7 @@ export const pageQuery = graphql`
             website
             slides
             video
+            openreview
             title
             # optionalText
             image {
