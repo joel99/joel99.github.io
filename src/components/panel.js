@@ -25,7 +25,8 @@ const Panel = ({ node }) => {
     }
   `);
 
-  const image = data.image.childImageSharp;
+  const image = data.image && data.image.childImageSharp;
+
 
   const title = data.title || node.fields.slug;
   const authorSpans = data.authors.map(a => a.trim()).map((a, i) => {
@@ -74,22 +75,17 @@ const Panel = ({ node }) => {
   const optionalText = data.optionalText && (<p>{data.optionalText}</p>);
   return (
     <div style={styles.container} key={node.fields.slug}>
-      <div>
-        <h3 style={styles.compactHeader}>
-          {title}
-        </h3>
-        <div>
-          {authorSpans}
-        </div>
-        {optionalText}
-        <small>{data.pub_info}</small>
-        <div style={styles.links}>
-          {links}
-        </div>
+      <div style={styles.content}>
+        <h3 style={styles.title}>{title}</h3>
+        <div style={styles.authors}>{authorSpans}</div>
+        <small style={styles.pubInfo}>{data.pub_info}</small>
+        <div style={styles.links}>{links}</div>
       </div>
-      <div style={styles.imgPreview}>
-        {image &&  <Img fluid={image.fluid} alt={title} />}
-      </div>
+      {image && (
+        <div style={styles.imgContainer}>
+          <Img fluid={image.fluid} alt={title} />
+        </div>
+      )}
     </div>
   );
 }
@@ -97,29 +93,44 @@ const Panel = ({ node }) => {
 const styles = {
   container: {
     display: "flex",
-    flexDirection: "column",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    marginBottom: "2.5rem",
+    padding: "1.25rem",
+    // borderBottom: "1px solid #eee",
   },
-  author: {
-
+  content: {
+    flex: "1 1 50%", // Decreased from 65% to give more space to the image
+    paddingRight: "1.5rem",
   },
-  authorEmph: {
-    fontWeight: 900,
+  title: {
+    fontSize: "1.3rem", // Decreased from 1.4rem
+    marginBottom: "0.4rem",
+  },
+  authors: {
+    fontSize: "0.9rem", // Decreased from 1rem (assuming it was 1rem before)
+    marginBottom: "0.4rem",
+  },
+  pubInfo: {
+    fontSize: "0.8rem", // Decreased from 0.9rem (assuming it was 0.9rem before)
+    fontStyle: "italic",
+    marginBottom: "0.4rem",
+    color: "#666",
   },
   links: {
     display: "flex",
-    flexDirection: "row",
-    marginBottom: "0.5em",
+    flexWrap: "wrap",
+    gap: "0.5rem",
   },
-  linkItem: {
-    marginRight: "4px"
+  imgContainer: {
+    flex: "0 0 50%", // Increased from 30% to allow image to take up more space
+    maxWidth: "500px", // Increased from 350px
   },
-  compactHeader: {
-    marginTop: "0.5em",
-    marginBottom: "0.5em"
+  image: {
+    width: "100%",
+    height: "auto",
+    objectFit: "contain", // Ensures the image maintains its aspect ratio
   },
-  // imgPreview: {
-  //   maxHeight: "12em"
-  // }
 }
 
 export default Panel
