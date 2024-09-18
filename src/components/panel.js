@@ -98,10 +98,18 @@ const styles = {
     marginBottom: "2.5rem",
     padding: "1.25rem",
     // borderBottom: "1px solid #eee",
+    "@media (max-width: 768px)": {
+      flexDirection: "column",
+    },
   },
   content: {
     flex: "1 1 50%", // Decreased from 65% to give more space to the image
     paddingRight: "1.5rem",
+    "@media (max-width: 768px)": {
+      flex: "1 1 auto",
+      paddingRight: "0",
+      marginBottom: "1rem",
+    },
   },
   title: {
     fontSize: "1.3rem", // Decreased from 1.4rem
@@ -125,6 +133,10 @@ const styles = {
   imgContainer: {
     flex: "0 0 50%", // Increased from 30% to allow image to take up more space
     maxWidth: "500px", // Increased from 350px
+    "@media (max-width: 768px)": {
+      flex: "1 1 auto",
+      maxWidth: "100%",
+    },
   },
   image: {
     width: "100%",
