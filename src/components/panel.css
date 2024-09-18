@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+    .panel-container {
+      flex-direction: column;
+    }
+
+    .panel-content {
+      flex: 1 1 auto;
+      padding-right: 0;
+      margin-bottom: 1rem;
+    }
+
+    .panel-image-container {
+      flex: 1 1 auto;
+      max-width: 100%;
+    }
+  }

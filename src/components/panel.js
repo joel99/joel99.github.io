@@ -8,8 +8,45 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image";
+import styled from "styled-components";
 
 import { ButtonLink } from "./button"
+import "./panel.css"
+
+const PanelContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+  padding: 1.25rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`
+
+const Content = styled.div`
+  flex: 1 1 50%;
+  padding-right: 1.5rem;
+
+  @media (max-width: 768px) {
+    flex: 1 1 auto;
+    padding-right: 0;
+    margin-bottom: 1rem;
+  }
+`
+
+const ImageContainer = styled.div`
+  flex: 0 0 50%;
+  max-width: 500px;
+
+  @media (max-width: 768px) {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1rem; // Add some space between content and image
+  }
+`
 
 const Panel = ({ node }) => {
 
@@ -74,19 +111,19 @@ const Panel = ({ node }) => {
   // This has too much whitespace..
   const optionalText = data.optionalText && (<p>{data.optionalText}</p>);
   return (
-    <div style={styles.container} key={node.fields.slug}>
-      <div style={styles.content}>
+    <PanelContainer className="panel-container" key={node.fields.slug}>
+      <Content className="panel-content">
         <h3 style={styles.title}>{title}</h3>
         <div style={styles.authors}>{authorSpans}</div>
         <small style={styles.pubInfo}>{data.pub_info}</small>
         <div style={styles.links}>{links}</div>
-      </div>
+      </Content>
       {image && (
-        <div style={styles.imgContainer}>
+        <ImageContainer className="panel-image-container">
           <Img fluid={image.fluid} alt={title} />
-        </div>
+        </ImageContainer>
       )}
-    </div>
+    </PanelContainer>
   );
 }
 
