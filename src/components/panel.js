@@ -13,6 +13,18 @@ import styled from "styled-components";
 import { ButtonLink } from "./button"
 import "./panel.css"
 
+const PanelContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+  padding: 1.25rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`
+
 const Content = styled.div`
   flex: 1 1 50%;
   padding-right: 1.5rem;
@@ -24,29 +36,15 @@ const Content = styled.div`
   }
 `
 
-const PanelContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;  // Changed from flex-start to center
-  margin-bottom: 2.5rem;
-  padding: 1.25rem;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
-`
-
 const ImageContainer = styled.div`
   flex: 0 0 50%;
   max-width: 500px;
-  display: flex;  // Added
-  align-items: center;  // Added
 
   @media (max-width: 768px) {
     flex: 1 1 auto;
     width: 100%;
     max-width: 100%;
-    margin-top: 1rem;
+    margin-top: 1rem; // Add some space between content and image
   }
 `
 
