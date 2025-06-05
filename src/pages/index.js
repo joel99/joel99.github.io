@@ -177,6 +177,7 @@ export const pageQuery = graphql`
             code
             website
             slides
+            poster
             video
             openreview
             title

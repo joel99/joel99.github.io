@@ -98,6 +98,11 @@ const Panel = ({ node }) => {
       <ButtonLink to={data.slides} name={"Slides"} />
     </div>);
   }
+  if (data.poster) {
+    links.push(<div style={styles.linkItem}>
+      <ButtonLink to={data.poster} name={"Poster"} />
+    </div>);
+  }
   if (data.video) {
     links.push(<div style={styles.linkItem}>
       <ButtonLink to={data.video} name={"Video"} />
