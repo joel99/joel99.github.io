@@ -69,7 +69,7 @@ class IndexPage extends React.Component {
 
           <p> I grew up in NYC, where I graduated from Stuyvesant High School, and I did my undergrad in Computer Science at Georgia Tech. During my undergrad, I was Director of Technology for Georgia Tech's hackathon org, <a href="https://hack.gt/">HackGT</a>, where we worked to host events to promote CS education. </p>
 
-          <p> Hobbies I make time for include <a href="https://www.goodreads.com/user/show/97533622-joel-ye">reading</a> (and I'm always open to recommendations) and studying Japanese and Chinese.</p>
+          {/* <p> Hobbies I make time for include <a href="https://www.goodreads.com/user/show/97533622-joel-ye">reading</a> (and I'm always open to recommendations) and studying Japanese and Chinese.</p> */}
         </section>
         <section>
           {data.news.nodes.map(RemarkTemplate)}
