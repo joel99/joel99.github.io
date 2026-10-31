@@ -49,8 +49,7 @@ class IndexPage extends React.Component {
           </div>
           <div style={styles.spotlight}>
             {/* <h3> Researcher &amp; Developer </h3> */}
-            <h4> NeuroAI PhD student </h4>
-            {/* <p> MS @ Georgia Tech &#8594; PhD student @ CMU </p> */}
+            <h4> NeuroAI researcher </h4>
             <p> Say hello: joelye9 at gmail dot com </p>
             <div style={styles.links}>
               {spotlightLinks.map(sl => <PaddedLink {...sl} />)}
@@ -60,7 +59,11 @@ class IndexPage extends React.Component {
         <section>
           <h3>Bio</h3>
           <p>
-            I am a PhD student in the <a href="https://www.cmu.edu/ni/academics/pnc/">Program in Neural Computation at CMU</a>, advised by <a href="https://www.rnel.pitt.edu/people/robert-gaunt-phd">Robert Gaunt</a> and <a href="https://www.cs.cmu.edu/~lwehbe/">Leila Wehbe</a>. I research how deep learning systems can advance how we study brain data and build bi-directional brain-computer interfaces. If you're just getting started in this area and would like advice, feel free to reach out! My work is supported by the <a href="https://www.krellinst.org/csgf/">DOE CSGF fellowship</a>.
+            I am a NeuroAI researcher at a stealth startup in NYC. I research how deep learning systems can advance how we study brain data and build bi-directional brain-computer interfaces. If you're just getting started in this area and would like advice, feel free to reach out!
+          </p>
+
+          <p>
+            At CMU, I conducted research in the <a href="https://www.cmu.edu/ni/academics/pnc/">Program in Neural Computation</a>, advised by <a href="https://www.rnel.pitt.edu/people/robert-gaunt-phd">Robert Gaunt</a> and <a href="https://www.cs.cmu.edu/~lwehbe/">Leila Wehbe</a> and supported by the <a href="https://www.krellinst.org/csgf/">DOE CSGF fellowship</a>.
           </p>
 
           <p>
