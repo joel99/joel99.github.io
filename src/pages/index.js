@@ -63,7 +63,7 @@ class IndexPage extends React.Component {
           </p>
 
           <p>
-            At CMU, I conducted research in the <a href="https://www.cmu.edu/ni/academics/pnc/">Program in Neural Computation</a>, advised by <a href="https://www.rnel.pitt.edu/people/robert-gaunt-phd">Robert Gaunt</a> and <a href="https://www.cs.cmu.edu/~lwehbe/">Leila Wehbe</a> and supported by the <a href="https://www.krellinst.org/csgf/">DOE CSGF fellowship</a>.
+            I completed my PhD in <a href="https://www.cmu.edu/ni/academics/pnc/">Neural Computation at CMU</a> in 2026, advised by <a href="https://www.rnel.pitt.edu/people/robert-gaunt-phd">Robert Gaunt</a> and <a href="https://www.cs.cmu.edu/~lwehbe/">Leila Wehbe</a>. My doctoral research was supported by the <a href="https://www.krellinst.org/csgf/">DOE CSGF fellowship</a>.
           </p>
 
           <p>
